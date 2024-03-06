@@ -1,0 +1,71 @@
+/* common styles  */
+* {
+    font-family: "Mulish", sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.orange-colour-text {
+    color: #FF5400;
+}
+
+/* header styles start */
+/* nav styles  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-name img {
+    width: calc(48rem / 16);
+    height: calc(56rem / 16);
+}
+
+.nav-name h2 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul a {
+    text-decoration: none;
+    font-size: calc(18rem / 16);
+    font-weight: 400;
+    margin-left: 44px;
+    color: #424247;
+}
+
+.home a {
+    color: #FF5400 !important;
+}
+
+.humburger-menu {
+    display: none;
+}
+
+/* header styles end */
+
+
+/* Responsive styles  */
+/* Mobile devises  */
+@media screen and (max-width:600px) {
+    .nav-menu ul {
+        display: none;
+    }
+
+    .humburger-menu {
+        display: block;
+    }
+}
