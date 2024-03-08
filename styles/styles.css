@@ -1,8 +1,13 @@
 /* common styles  */
-* {
+body {
     font-family: "Mulish", sans-serif;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+main,
+header {
+    margin: 0 calc(135rem/16);
 }
 
 .orange-colour-text {
@@ -55,14 +60,124 @@ nav {
     display: none;
 }
 
+/* Banner style start  */
+.banner-section {
+    background-image: url("/Images/Group\ 13\ \(1\)\ \(1\).png");
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    height: 50vh;
+    text-align: center;
+    margin-top: calc(50rem / 16);
+    padding: 106px;
+}
+
+.banner-title {
+    margin: 0;
+    /* margin-top: 70px; */
+    padding-top: calc(70rem / 16);
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner-description {
+    color: #FFF;
+    font-weight: 400;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-form {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    border-radius: 8px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.banner-form input,
+select {
+    padding: 16px;
+    border-radius: 8px;
+    background: #FFF;
+    border: none;
+    color: rgba(19, 19, 24, 0.50);
+    font-weight: 400;
+}
+
+.banner-form button {
+    padding: 16px 34px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+}
+
+/* banner style end  */
 /* header styles end */
 
 
 /* Responsive styles  */
 /* Mobile devises  */
 @media screen and (max-width:600px) {
+
+    main,
+    header {
+        margin: 0 16px;
+    }
+
     .nav-menu ul {
         display: none;
+    }
+
+    .banner-section {
+        height: 300vw;
+        background-size: 300vw;
+        padding: 0;
+    }
+
+    .banner-form {
+        flex-direction: column;
+    }
+
+    .banner-title {
+        padding: 0;
+    }
+
+
+    .humburger-menu {
+        display: block;
+    }
+}
+
+/* tablate devces  */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+
+    main,
+    header {
+        margin: 0 16px;
+    }
+
+    .nav-menu ul {
+        display: none;
+    }
+
+    .banner-section {
+        height: 200vw;
+        background-size: 200vw;
+        padding: 0;
+    }
+
+    .banner-form {
+        flex-direction: column;
     }
 
     .humburger-menu {
