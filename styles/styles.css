@@ -10,6 +10,38 @@ header {
     margin: 0 calc(135rem/16);
 }
 
+section {
+    margin-top: 100px;
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 24px;
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.primary-colour-font {
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.section-description {
+    color: rgba(19, 19, 24, 0.70);
+    font-weight: 400;
+}
+
+.primary-button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 8px;
+    background: #FF5400;
+    padding: 14px 34px;
+    border: none;
+}
+
 .orange-colour-text {
     color: #FF5400;
 }
@@ -64,17 +96,16 @@ nav {
 .banner-section {
     background-image: url("/Images/Group\ 13\ \(1\)\ \(1\).png");
     background-repeat: no-repeat;
-    border-radius: 16px;
-    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     text-align: center;
+    padding: calc(106rem/16) 0;
     margin-top: calc(50rem / 16);
-    padding: 106px;
 }
 
 .banner-title {
     margin: 0;
-    /* margin-top: 70px; */
-    padding-top: calc(70rem / 16);
     color: #FFF;
     font-size: 64px;
     font-weight: 800;
@@ -95,10 +126,8 @@ nav {
     justify-content: center;
     padding: 16px;
     border-radius: 8px;
-    border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     gap: 24px;
-    margin-bottom: 16px;
 }
 
 .banner-form input,
@@ -124,6 +153,26 @@ select {
 /* banner style end  */
 /* header styles end */
 
+/* our popular section styles start */
+.our-popular-toor-section {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.our-popular-details {
+    width: calc(50% - 25px);
+}
+
+.our-popular-toor-section-image {
+    width: calc(50% - 25px);
+}
+
+.our-popular-toor-section-image img {
+    width: 100%;
+}
+
+/* our popular section styles start */
 
 /* Responsive styles  */
 /* Mobile devises  */
@@ -138,13 +187,25 @@ select {
         display: none;
     }
 
-    .banner-section {
-        height: 300vw;
-        background-size: 300vw;
-        padding: 0;
+    section {
+        margin-top: 50px;
     }
 
-    .banner-form {
+    .banner-title {
+        font-size: 22px;
+        font-weight: 800;
+    }
+
+    .banner-description {
+        font-size: 14px;
+    }
+
+    .banner-section {
+        padding: calc(24rem / 16) 0;
+    }
+
+    .banner-form,
+    .our-popular-toor-section {
         flex-direction: column;
     }
 
@@ -156,7 +217,18 @@ select {
     .humburger-menu {
         display: block;
     }
+
+    .our-popular-details {
+        width: 100%;
+    }
+
+    .our-popular-toor-section-image {
+        width: 100%;
+    }
+
 }
+
+
 
 /* tablate devces  */
 @media screen and (min-width: 601px) and (max-width: 992px) {
@@ -166,21 +238,28 @@ select {
         margin: 0 16px;
     }
 
+    section {
+        margin-top: 50px;
+    }
+
     .nav-menu ul {
         display: none;
     }
 
-    .banner-section {
-        height: 200vw;
-        background-size: 200vw;
-        padding: 0;
-    }
-
-    .banner-form {
+    .banner-form,
+    .our-popular-toor-section {
         flex-direction: column;
     }
 
     .humburger-menu {
         display: block;
+    }
+
+    .our-popular-details {
+        width: 100%;
+    }
+
+    .our-popular-toor-section-image {
+        width: 100%;
     }
 }
