@@ -175,8 +175,8 @@ select {
 /* our popular section styles end */
 
 /* choose your destination section start  */
-.choose-your-destination-section .section-title,
-.section-description {
+.choose-your-destination-section>.section-title,
+.choose-your-destination-section>.section-description {
     text-align: center;
 }
 
@@ -209,6 +209,56 @@ select {
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
+}
+
+/* why chose us section start  */
+.why-chose-us-first-row-card-container {
+    display: flex;
+    gap: 24px;
+}
+
+.why-chose-us-first-row-card-container .card,
+.why-chose-us-secound-row-card-container .card {
+    width: 50%;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    padding: 32px;
+}
+
+.why-chose-us-secound-row-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.why-choose-us-card-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #131318;
+}
+
+.why-choose-us-card-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#first-card {
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#secound-card {
+    background: rgba(41, 206, 246, 0.05);
+}
+
+#third-card {
+    background: rgba(233, 68, 68, 0.05);
+    margin-top: 24px;
+}
+
+
+/* why chose us section end  */
+.card-image {
+    font-size: 64px;
 }
 
 /* choose your destination section end  */
@@ -250,7 +300,8 @@ select {
     .our-popular-toor-section,
     .first-row,
     .secound-row,
-    .third-row {
+    .third-row,
+    .why-chose-us-first-row-card-container {
         flex-direction: column;
     }
 
@@ -263,7 +314,9 @@ select {
         display: block;
     }
 
-    .our-popular-details {
+    .our-popular-details,
+    .why-chose-us-first-row-card-container .card,
+    .why-chose-us-secound-row-card-container .card {
         width: 100%;
     }
 
