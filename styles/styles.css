@@ -10,7 +10,8 @@ header {
     margin: 0 calc(135rem/16);
 }
 
-section {
+section,
+footer {
     margin-top: 100px;
 }
 
@@ -312,6 +313,7 @@ select {
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
     border: none;
+
 }
 
 .offer-bage {
@@ -347,12 +349,42 @@ select {
 
 /* newslater section end */
 
+/* footer section style start */
+footer {
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 110px 336px;
+}
+
+.footer-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.footer-icons .fa-brands {
+    font-size: 24px;
+    margin: 0 12px;
+}
+
+footer hr {
+    margin: 50px 0;
+}
+
+/* footer section style end */
+
 /* Responsive styles  */
 /* Mobile devises  */
 @media screen and (max-width:600px) {
 
     main,
-    header {
+    header,
+    footer {
         margin: 0 16px;
     }
 
@@ -412,6 +444,7 @@ select {
 
     .newslater-form {
         width: 100%;
+        padding: 0;
     }
 
     .newslater-image-part {
@@ -419,9 +452,12 @@ select {
     }
 
     .offer-bage {
-        right: -60px;
+        right: 20px;
     }
 
+    footer {
+        padding: 44px;
+    }
 
 }
 
