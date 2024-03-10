@@ -262,6 +262,91 @@ select {
 }
 
 /* choose your destination section end  */
+/* newslater section start  */
+.newslater-section {
+    display: flex;
+    gap: 24px;
+}
+
+.newslater-form {
+    width: 45%;
+}
+
+.newslater-image-part {
+    width: 55%;
+    position: relative;
+}
+
+.newslater-image-part img {
+    width: 100%;
+    height: 100%;
+}
+
+.newslater-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+    gap: 16px;
+}
+
+.newslater-form-heading {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.newslater-form p {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.newslater-form input {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+}
+
+.offer-bage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FF5400;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+.offer-bage p {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.offer-bage h4 {
+    margin: 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* newslater section end */
+
 /* Responsive styles  */
 /* Mobile devises  */
 @media screen and (max-width:600px) {
@@ -301,7 +386,8 @@ select {
     .first-row,
     .secound-row,
     .third-row,
-    .why-chose-us-first-row-card-container {
+    .why-chose-us-first-row-card-container,
+    .newslater-section {
         flex-direction: column;
     }
 
@@ -323,6 +409,19 @@ select {
     .our-popular-toor-section-image {
         width: 100%;
     }
+
+    .newslater-form {
+        width: 100%;
+    }
+
+    .newslater-image-part {
+        width: 100%;
+    }
+
+    .offer-bage {
+        right: -60px;
+    }
+
 
 }
 
